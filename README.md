@@ -12,11 +12,11 @@ gem 'mobile_pronto', :git => 'git@github.com:coyosoftware/mobile-pronto.git'
 
 ```ruby
 # your API credential, Gateway Token and app name here
-mp = MobilePronto::SMS.new('AWESOMEAPICREDENTIALS', 'MYAMAZINGAPP', 'AMAZINTOKEN')
+mp = MobilePronto::SMS.new('AWESOMEAPICREDENTIALS', 'MYAMAZINGAPP', 'AMAZINGTOKEN')
 
 # Send SMS
 # for params see Mobile Pronto docs
-response = mp.send('558188888888', 'brunnogomes', 'This is SPARTA!')
+response = mp.send('558188888888', 'coyo', 'This is SPARTA!')
 
 # 000 means success, see Mobile Pronto docs for other codes meaning
 # the part after the : is the message id
