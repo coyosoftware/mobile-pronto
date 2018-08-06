@@ -3,8 +3,8 @@ module MobilePronto
 
     attr_reader :value
 
-    def initialize(credencial)
-      @value = {"CREDENCIAL" => credencial}
+    def initialize(credencial, token)
+      @value = {"CREDENCIAL" => credencial, "TOKEN" => token}
     end
     
     def method_missing(name, *args)

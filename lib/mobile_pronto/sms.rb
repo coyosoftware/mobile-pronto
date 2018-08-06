@@ -4,14 +4,15 @@ module MobilePronto
 
     include HTTParty
  
-    attr_accessor :credential, :username, :parameters
+    attr_accessor :credential, :username, :token, :parameters
 
-    base_uri "http://www.mpgateway.com/v_2_00"
+    base_uri "http://www.pw-api.com/sms/v_3_00"
 
-    def initialize(credential, username)
+    def initialize(credential, username, token)
       self.credential = credential
       self.username = username
-      self.parameters = Parameters.new(self.credential)
+      self.token = token
+      self.parameters = Parameters.new(self.credential, self.token)
     end
 
     def credits
