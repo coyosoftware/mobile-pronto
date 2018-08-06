@@ -1,18 +1,18 @@
-# MobilePronto API Wrapper
+# PitchWink API Wrapper
 
 ## How to use
 
 ### Just put in your Gemfile
 
 ```ruby
-gem 'mobile_pronto', :git => 'git@github.com:brunnogomes/mobile-pronto.git'
+gem 'mobile_pronto', :git => 'git@github.com:coyosoftware/mobile-pronto.git'
 ```
 
 ### Starting
 
 ```ruby
-# your API credential and app name here
-mp = MobilePronto::SMS.new('AWESOMEAPICREDENTIALS', 'MYAMAZINGAPP')
+# your API credential, Gateway Token and app name here
+mp = MobilePronto::SMS.new('AWESOMEAPICREDENTIALS', 'MYAMAZINGAPP', 'AMAZINTOKEN')
 
 # Send SMS
 # for params see Mobile Pronto docs
